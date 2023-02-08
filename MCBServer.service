@@ -1,0 +1,15 @@
+[Unit]
+Description=Minecraft Server Shutdown Service
+After=network.target
+StartLimitBurst=0
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/home/ubuntu/MCBooter
+ExecStart=/usr/bin/python -u MCBServer.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
