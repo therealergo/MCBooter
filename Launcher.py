@@ -89,7 +89,7 @@ while True:
 
     try:
         read_sockets, write_sockets, error_sockets = select.select(socks, [], [], MINECONN_TIMEOUT)
-	if len(read_sockets) > 0:
+        if len(read_sockets) > 0:
             conn, addr = read_sockets[0].accept()
             conn.settimeout(MINECONN_TIMEOUT)
             print('Connection address:', addr)
