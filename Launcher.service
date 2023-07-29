@@ -6,7 +6,7 @@ StartLimitBurst=0
 [Service]
 Type=simple
 WorkingDirectory=/home/ubuntu/MCBooter
-ExecStart=/usr/bin/python -u Launcher.py
+ExecStart=/usr/bin/python3 -u Launcher.py
 Restart=always
 RestartSec=5
 

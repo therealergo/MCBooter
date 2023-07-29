@@ -7,7 +7,7 @@ StartLimitBurst=0
 Type=simple
 User=root
 WorkingDirectory=/home/ubuntu/MCBooter
-ExecStart=/usr/bin/python -u MCBServer.py
+ExecStart=/usr/bin/python3 -u MCBServer.py
 Restart=always
 RestartSec=5
 
